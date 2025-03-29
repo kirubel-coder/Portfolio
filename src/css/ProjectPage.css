@@ -1,0 +1,435 @@
+/* General styles for all project pages */
+.project-page, .project2-page, .project3-page {
+    background-color: #0D1117;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    width: 96vw;
+}
+
+/* Styles specific to ProjectPage */
+.project-page .first {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-page .first-img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-page .second {
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto; /* Center the section */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align elements */
+}
+
+.project-page .second h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.project-page .second p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center; /* Center-align text */
+}
+
+.project-page .second div {
+   width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-page .third {
+    display: flex;
+    flex-direction: row; /* Stack elements vertically */
+    align-items: top; /* Center-align elements */
+    justify-content: center;
+    margin-top: 30px;
+    gap: 50px; /* Add spacing between sections */
+}
+
+.project-page .third-left, .project-page .third-middle, .project-page .third-right {
+    text-align: start; /* Center-align text */
+    padding: 10px;
+}
+
+.project-page .third-left h1, .project-page .third-middle h1, .project-page .third-right h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-page .third-left ul, .project-page .third-middle ul, .project-page .third-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-page .third-left li, .project-page .third-middle li, .project-page .third-right li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.project-page .fourth {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;
+    height: 100vh;
+}
+
+.project-page .fourth img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+/* Styles specific to Project2Page */
+.project2-page .first {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project2-page .first-img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project2-page .second {
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto; /* Center the section */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align elements */
+}
+
+.project2-page .second h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.project2-page .second p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center; /* Center-align text */
+}
+
+.project2-page .third {
+    display: flex;
+    flex-direction: row; /* Stack elements vertically */
+    align-items: top; /* Center-align elements */
+    justify-content: center;
+    margin-top: 30px;
+    gap: 50px; /* Add spacing between sections */
+}
+
+.project2-page .third-left, .project2-page .third-middle, .project2-page .third-right {
+    text-align: start; /* Center-align text */
+    padding: 10px;
+}
+
+.project2-page .third-left h1, .project2-page .third-middle h1, .project2-page .third-right h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project2-page .third-left ul, .project2-page .third-middle ul, .project2-page .third-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project2-page .third-left li, .project2-page .third-middle li, .project2-page .third-right li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.project2-page .fourth {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;
+    height: 100vh;
+}
+
+.project2-page .fourth img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+
+/* Styles specific to Project3Page */
+.project3-page .first {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project3-page .first-img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project3-page .second {
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto; /* Center the section */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align elements */
+}
+
+.project3-page .second h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.project3-page .second p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center; /* Center-align text */
+}
+
+.project3-page .third {
+    display: flex;
+    flex-direction: row; /* Stack elements vertically */
+    align-items: top; /* Center-align elements */
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px; /* Add spacing between sections */
+}
+
+.project3-page .third-left, .project3-page .third-middle, .project3-page .third-right {
+    text-align: start; /* Center-align text */
+    padding: 10px;
+}
+
+.project3-page .third-left h1, .project3-page .third-middle h1, .project3-page .third-right h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project3-page .third-left ul, .project3-page .third-middle ul, .project3-page .third-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project3-page .third-left li, .project3-page .third-middle li, .project3-page .third-right li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.project3-page .fourth {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;
+    height: 100vh;
+}
+
+.project3-page .fourth img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .project-page .first-img, 
+    .project2-page .first-img, 
+    .project3-page .first-img {
+        width: 80%;
+        height: auto;
+    }
+
+    .project-page .second, 
+    .project2-page .second, 
+    .project3-page .second {
+        width: 90%;
+    }
+
+    .project-page .third, 
+    .project2-page .third, 
+    .project3-page .third {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .project-page .third-left, 
+    .project-page .third-middle, 
+    .project-page .third-right,
+    .project2-page .third-left, 
+    .project2-page .third-middle, 
+    .project2-page .third-right,
+    .project3-page .third-left, 
+    .project3-page .third-middle, 
+    .project3-page .third-right {
+        text-align: center;
+        width: 100%;
+    }
+
+    .project-page .fourth img, 
+    .project2-page .fourth img, 
+    .project3-page .fourth img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-page .first, 
+    .project2-page .first, 
+    .project3-page .first {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .project-page .first-img, 
+    .project2-page .first-img, 
+    .project3-page .first-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-page .second h1, 
+    .project2-page .second h1, 
+    .project3-page .second h1 {
+        font-size: 28px;
+    }
+
+    .project-page .second p, 
+    .project2-page .second p, 
+    .project3-page .second p {
+        font-size: 16px;
+    }
+
+    .project-page .third h1, 
+    .project2-page .third h1, 
+    .project3-page .third h1 {
+        font-size: 20px;
+    }
+
+    .project-page .third-left ul, 
+    .project-page .third-middle ul, 
+    .project-page .third-right ul,
+    .project2-page .third-left ul, 
+    .project2-page .third-middle ul, 
+    .project2-page .third-right ul,
+    .project3-page .third-left ul, 
+    .project3-page .third-middle ul, 
+    .project3-page .third-right ul {
+        padding: 0;
+    }
+
+    .project-page .fourth, 
+    .project2-page .fourth, 
+    .project3-page .fourth {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .project-page .fourth img, 
+    .project2-page .fourth img, 
+    .project3-page .fourth img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-page , 
+    .project2-page , 
+    .project3-page  {
+        width: 90vw;
+        height: auto;
+    }
+    .project-page .first-img, 
+    .project2-page .first-img, 
+    .project3-page .first-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-page .second, 
+    .project2-page .second, 
+    .project3-page .second {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .project-page .second h1, 
+    .project2-page .second h1, 
+    .project3-page .second h1 {
+        font-size: 24px;
+    }
+
+    .project-page .second p, 
+    .project2-page .second p, 
+    .project3-page .second p {
+        font-size: 14px;
+    }
+
+    .project-page .third, 
+    .project2-page .third, 
+    .project3-page .third {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .project-page .third-left, 
+    .project-page .third-middle, 
+    .project-page .third-right,
+    .project2-page .third-left, 
+    .project2-page .third-middle, 
+    .project2-page .third-right,
+    .project3-page .third-left, 
+    .project3-page .third-middle, 
+    .project3-page .third-right {
+        text-align: center;
+        width: 100%;
+    }
+
+    .project-page .fourth img, 
+    .project2-page .fourth img, 
+    .project3-page .fourth img {
+        width: 90%;
+        height: auto;
+    }
+}

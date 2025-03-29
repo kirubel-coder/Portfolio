@@ -1,0 +1,100 @@
+.navbar{
+    background-color: #0D1117;
+    display: flex;
+    justify-content: space-between;
+    min-width: 96vw;
+    height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.navbar-left h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-left: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.scroll{
+    cursor: pointer;
+}
+
+.navbar-right a {
+    color: #fff;
+    text-decoration: none;
+    margin: 20px 15px;
+    transition: text-shadow 0.3s ease-in-out;
+    font-size: 23px;
+}
+.navbar-right{
+    margin-top: 25px;
+    margin-right: 60px;
+}
+.navbar-right a:hover {
+    text-shadow: 0 0 10px #ff8ec1, 0 0 20px #ff8ec1, 0 0 30px #ff8ec1;
+}
+.navbar-left h2:hover {
+    text-shadow: 0 0 10px #ff8ec1, 0 0 20px #ff8ec1, 0 0 30px #ff8ec1;
+}
+.menu-close-icon, .menu-icon {
+    width: 30px;
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        margin: 0;
+        padding: 0 20px;
+        width: 80vw;
+    }
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .menu-close-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .navbar-right {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        top: -20px;
+        right: -350px; /* Adjusted for smooth transition */
+        background-color: #1F0016;
+        width: 300px;
+        height: 100%;
+        z-index: 10;
+        transition: right 0.3s ease-in-out; /* Smooth transition */
+        padding-top: 60px;
+    }
+    .navbar-right a {
+        font-size: 20px;
+        padding: 10px 20px;
+        width: 100%;
+        text-align: left;
+    }
+    .navbar-right a:hover {
+        background-color: #ff8ec1;
+        color: #000;
+    }
+    #home{
+        font-size: 30px;
+    }
+}
