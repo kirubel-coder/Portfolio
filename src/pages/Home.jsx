@@ -5,7 +5,7 @@ import '../css/Home.css';
 import Survice from '../components/Survice.jsx';
 import Project from '../components/Project.jsx';
 import Contact from '../components/Contact.jsx';
-import upworkPfpCropped1 from "../assets/upworkPfpCropped1.jpg";
+import upworkPfpCropped2 from "../assets/upworkPfpCropped2.jpg";
 import ppforAbout from "../assets/ppforAbout.jpg";
 import newFullstack from "../assets/newFullstack.png";
 import frontend_iconnew from "../assets/frontend_iconnew.png";
@@ -20,7 +20,7 @@ function Home() {
     <div>
       <Element name="home" className="hero-section">
         <div className="hero-left">
-          <img className="top-profile" src={upworkPfpCropped1} alt="profile picture" />
+          <img className="top-profile" src={upworkPfpCropped2} alt="profile picture" />
         </div>
         <div className="hero-right">
           <h1>Hey, I'm Kirubel Addis</h1>
