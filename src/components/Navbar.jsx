@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link, useLocation } from 'react-router-dom';
 import '../css/Navbar.css';
+import newMenu_icon from '../assets/newMenu_icon.png';  
+import newCloseMenu_icon from '../assets/newCloseMenu_icon.png';
 
 function Navbar() {
   const menuRef = useRef();
@@ -26,7 +28,7 @@ function Navbar() {
         <img
           className="menu-icon"
           onClick={openMenu}
-          src="../src/assets/newMenu_icon.png"
+          src={newMenu_icon}
           alt="Open Menu"
         />
       </div>
@@ -34,7 +36,7 @@ function Navbar() {
         <img
           className="menu-close-icon"
           onClick={closeMenu}
-          src="../src/assets/newCloseMenu_icon.png"
+          src={newCloseMenu_icon}
           alt="Close Menu"
         />
         {!isProjectPage && (
