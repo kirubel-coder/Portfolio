@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/ProjectPage.css';
-import movieRating1 from '../src/assets/movierating1.png';
-import movieRating2 from '../src/assets/movierating2.png';
-import movieRating3 from '../src/assets/movierating3.png';
-import movieAdmin4 from '../src/assets/movieadmin4.png';
-import movieAdmin5 from '../src/assets/movieadmin5.png';
+import movierating1 from '../src/assets/movierating1.png';
+import movierating2 from '../src/assets/movierating2.png';
+import movierating3 from '../src/assets/movierating3.png';
+import movieadmin4 from '../src/assets/movieadmin4.png';
+import movieadmin5 from '../src/assets/movieadmin5.png';
 
 function ProjectPage() {
   return (
     <div className='project-page'>
       <div className="first">
-        <img className='first-img' src={movieRating1} alt="Movie Rating 1" />
+        <img className='first-img' src={movierating1} alt="Movie Rating 1" />
       </div>
       <div className="second">
         <h1>Description</h1>
@@ -49,10 +49,10 @@ function ProjectPage() {
         </div>
       </div>
       <div className="fourth">
-        <img src={movieRating2} alt="Movie Rating 2" />
-        <img src={movieRating3} alt="Movie Rating 3" />
-        <img src={movieAdmin4} alt="Movie Admin 4" />
-        <img src={movieAdmin5} alt="Movie Admin 5" />
+        <img src={movierating2} alt="Movie Rating 2" />
+        <img src={movierating3} alt="Movie Rating 3" />
+        <img src={movieadmin4} alt="Movie Admin 4" />
+        <img src={movieadmin5} alt="Movie Admin 5" />
       </div>
     </div>
   );
