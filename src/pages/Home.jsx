@@ -5,13 +5,14 @@ import '../css/Home.css';
 import Survice from '../components/Survice.jsx';
 import Project from '../components/Project.jsx';
 import Contact from '../components/Contact.jsx';
+import upworkPfpCropped1 from "../src/assets/upworkPfpCropped1.jpg";
 
 function Home() {
   return (
     <div>
       <Element name="home" className="hero-section">
         <div className="hero-left">
-          <img className="top-profile" src="../src/assets/upworkPfpCropped1.jpg" alt="profile picture" />
+          <img className="top-profile" src={upworkPfpCropped1.jpg} alt="profile picture" />
         </div>
         <div className="hero-right">
           <h1>Hey, I'm Kirubel Addis</h1>
