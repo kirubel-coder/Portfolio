@@ -1,7 +1,9 @@
 {
+
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
+  "main": "src/main.jsx",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -30,5 +32,19 @@
     "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
     "vite": "^6.2.0"
-  }
+  },
+
+  "browserslist": {
+  "production": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "development": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ]
+}
+
 }
