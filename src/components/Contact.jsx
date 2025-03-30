@@ -1,8 +1,8 @@
 import React from 'react';
 import '../css/Contact.css';
-import mailNew from '../src/assets/mailnew.png'; // Import the mail icon
-import telephoneNew from '../src/assets/telephonenew.png'; // Import the phone icon
-import locationNew from '../src/assets/locationnew.png'; // Import the location icon
+import mailNew from '../assets/mailnew.png'; // Import the mail icon
+import telephoneNew from '../assets/telephonenew.png'; // Import the phone icon
+import locationNew from '../assets/locationnew.png'; // Import the location icon
 
 function Contact() {
   const onSubmit = async (event) => {
