@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/ProjectPage.css';
-import closet1 from '../src/assets/closet1.png';
-import closet2 from '../src/assets/closet2.png';
-import closet3 from '../src/assets/closet3.png';
-import closet4 from '../src/assets/closet4.png';
+import closet1 from '../assets/closet1.png';
+import closet2 from '../assets/closet2.png';
+import closet3 from '../assets/closet3.png';
+import closet4 from '../assets/closet4.png';
 
 function Project2Page() {
   return (

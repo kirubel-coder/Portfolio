@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/ProjectPage.css';
-import danat1 from '../src/assets/danat1.png';
-import danat2 from '../src/assets/danat2.png';
-import danat3 from '../src/assets/danat3.png';
-import danat4 from '../src/assets/danat4.png';
+import danat1 from '../assets/danat1.png';
+import danat2 from '../assets/danat2.png';
+import danat3 from '../assets/danat3.png';
+import danat4 from '../assets/danat4.png';
 
 function Project3Page() {
   return (

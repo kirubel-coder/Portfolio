@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/ProjectPage.css';
-import movierating1 from '../src/assets/movierating1.png';
-import movierating2 from '../src/assets/movierating2.png';
-import movierating3 from '../src/assets/movierating3.png';
-import movieadmin4 from '../src/assets/movieadmin4.png';
-import movieadmin5 from '../src/assets/movieadmin5.png';
+import movierating1 from '../assets/movierating1.png';
+import movierating2 from '../assets/movierating2.png';
+import movierating3 from '../assets/movierating3.png';
+import movieadmin4 from '../assets/movieadmin4.png';
+import movieadmin5 from '../assets/movieadmin5.png';
 
 function ProjectPage() {
   return (

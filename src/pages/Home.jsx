@@ -5,15 +5,15 @@ import '../css/Home.css';
 import Survice from '../components/Survice.jsx';
 import Project from '../components/Project.jsx';
 import Contact from '../components/Contact.jsx';
-import upworkPfpCropped1 from "../src/assets/upworkPfpCropped1.jpg";
-import ppforAbout from "../src/assets/ppforAbout.jpg";
-import newFullstack from "../src/assets/newFullstack.png";
-import frontend_iconnew from "../src/assets/frontend_iconnew.png";
-import newBackendorg from "../src/assets/newBackendorg.png"; 
-import webdesignnew from "../src/assets/webdesignnew.png";
-import movierating1 from "../src/assets/movierating1.png";
-import closet1 from "../src/assets/closet1.png";
-import danat1 from "../src/assets/danat1.png";
+import upworkPfpCropped1 from "../assets/upworkPfpCropped1.jpg";
+import ppforAbout from "../assets/ppforAbout.jpg";
+import newFullstack from "../assets/newFullstack.png";
+import frontend_iconnew from "../assets/frontend_iconnew.png";
+import newBackendorg from "../assets/newBackendorg.png"; 
+import webdesignnew from "../assets/webdesignnew.png";
+import movierating1 from "../assets/movierating1.png";
+import closet1 from "../assets/closet1.png";
+import danat1 from "../assets/danat1.png";
 
 function Home() {
   return (
