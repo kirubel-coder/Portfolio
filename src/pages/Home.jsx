@@ -6,13 +6,21 @@ import Survice from '../components/Survice.jsx';
 import Project from '../components/Project.jsx';
 import Contact from '../components/Contact.jsx';
 import upworkPfpCropped1 from "../src/assets/upworkPfpCropped1.jpg";
+import ppforAbout from "../src/assets/ppforAbout.jpg";
+import newFullstack from "../src/assets/newFullstack.png";
+import frontend_iconnew from "../src/assets/frontend_iconnew.png";
+import newBackendorg from "../src/assets/newBackendorg.png"; 
+import webdesignnew from "../src/assets/webdesignnew.png";
+import movierating1 from "../src/assets/movierating1.png";
+import closet1 from "../src/assets/closet1.png";
+import danat1 from "../src/assets/danat1.png";
 
 function Home() {
   return (
     <div>
       <Element name="home" className="hero-section">
         <div className="hero-left">
-          <img className="top-profile" src={upworkPfpCropped1.jpg} alt="profile picture" />
+          <img className="top-profile" src={upworkPfpCropped1} alt="profile picture" />
         </div>
         <div className="hero-right">
           <h1>Hey, I'm Kirubel Addis</h1>
@@ -27,7 +35,7 @@ function Home() {
         <h1>About me</h1>
         <div className="about-content">
           <div className="about-left">
-            <img src="../src/assets/ppforAbout.jpg" alt="About me" />
+            <img src={ppforAbout} alt="About me" />
           </div>
           <div className="about-right block">
             <p>
@@ -69,22 +77,22 @@ function Home() {
         <h1>Survices</h1>
         <div className="survice-container block">
           <Survice
-            img="../src/assets/newFullstack.png"
+            img={newFullstack}
             title="Fullstack development"
             detail=" I’m a full-stack developer who builds seamless, functional, and user-friendly web applications. From front-end design to back-end logic, I create scalable solutions that solve real-world problems💻🚀."
           />
           <Survice
-            img="../src/assets/frontend_iconnew.png"
+            img={frontend_iconnew}
             title="Frontend development"
             detail="I specialize in frontend development, crafting intuitive and visually appealing user interfaces. I focus on creating seamless, responsive designs that enhance user experience🎨."
           />
           <Survice
-            img="../src/assets/newBackendorg.png"
+            img={newBackendorg}
             title="Backend development"
             detail=" I have expertise in backend development, building robust server-side solutions and managing databases to ensure seamless functionality and performance⚙️."
           />
           <Survice
-            img="../src/assets/webdesignnew.png"
+            img={webdesignnew}
             title="UX|UI designing"
             detail="I create intuitive and engaging UX/UI designs, focusing on delivering user-friendly interfaces that provide an exceptional experience. 🎨"
           />
@@ -95,13 +103,13 @@ function Home() {
         <h1>Recent Works</h1>
         <div className="project-container">
           <Link to="/project1">
-            <Project img="../src/assets/movierating1.png" title="Movie rating Website for Amharic movies" />
+            <Project img={movierating1} title="Movie rating Website for Amharic movies" />
           </Link>
           <Link to="/project2">
-            <Project img="../src/assets/closet1.png" title="Shopping WebApp" />
+            <Project img={closet1} title="Shopping WebApp" />
           </Link>
           <Link to="/project3">
-            <Project img="../src/assets/danat1.png" title="Landing page" />
+            <Project img={danat1} title="Landing page" />
           </Link>
         </div>
         <h1 className="get-in">Get in touch</h1>

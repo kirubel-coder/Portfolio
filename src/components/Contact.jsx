@@ -1,9 +1,10 @@
-import React from 'react'
-import '../css/Contact.css'
+import React from 'react';
+import '../css/Contact.css';
+import mailNew from '../src/assets/mailnew.png'; // Import the mail icon
+import telephoneNew from '../src/assets/telephonenew.png'; // Import the phone icon
+import locationNew from '../src/assets/locationnew.png'; // Import the location icon
 
 function Contact() {
-
-
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -23,37 +24,39 @@ function Contact() {
     }).then((res) => res.json());
 
     if (res.success) {
-     alert(res.message);
+      alert(res.message);
     }
   };
 
-
   return (
     <div className='contact'>
-        <div className="contact-left">
-          <h1>Let's talk</h1>
-          <p>Let's take the time to discuss your projects in detail, and together we will work towards finding the most effective solution.</p>
-          <div className="info-div">
-          <img src="../src/assets/mailnew.png" alt="" />kirubeladdis364@gmail.com<p></p>
-          </div>
-          <div className="info-div">
-          <img src="../src/assets/telephonenew.png" alt="" /><p>+251932760515</p>
-          </div>
-          <div className="info-div">
-          <img src="../src/assets/locationnew.png" alt="" /><p>Addis Ababa, Ethiopia</p>
-          </div>
+      <div className="contact-left">
+        <h1>Let's talk</h1>
+        <p>Let's take the time to discuss your projects in detail, and together we will work towards finding the most effective solution.</p>
+        <div className="info-div">
+          <img src={mailNew} alt="Email icon" /> {/* Use the imported variable */}
+          kirubeladdis364@gmail.com<p></p>
         </div>
-        <form onSubmit={onSubmit} className="contact-right">
-          <label htmlFor="">Your Name</label>
-          <input type="text" placeholder='Enter your name' name='name'/>
-          <label htmlFor="">Your Email</label>
-           <input type="text" placeholder='Enter your email' name='email'/>
-          <label htmlFor="">Write your message here</label>
-          <textarea name="message" rows="8" placeholder='Enter your message'></textarea>
-          <button type='submit' className='contact-submit'>Submit</button>
-        </form>
+        <div className="info-div">
+          <img src={telephoneNew} alt="Phone icon" /> {/* Use the imported variable */}
+          <p>+251932760515</p>
+        </div>
+        <div className="info-div">
+          <img src={locationNew} alt="Location icon" /> {/* Use the imported variable */}
+          <p>Addis Ababa, Ethiopia</p>
+        </div>
+      </div>
+      <form onSubmit={onSubmit} className="contact-right">
+        <label htmlFor="">Your Name</label>
+        <input type="text" placeholder='Enter your name' name='name'/>
+        <label htmlFor="">Your Email</label>
+        <input type="text" placeholder='Enter your email' name='email'/>
+        <label htmlFor="">Write your message here</label>
+        <textarea name="message" rows="8" placeholder='Enter your message'></textarea>
+        <button type='submit' className='contact-submit'>Submit</button>
+      </form>
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
