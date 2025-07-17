@@ -1,12 +1,16 @@
-.navbar{
-    background-color: #0D1117;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Montserrat:wght@400;700&display=swap');
+
+.navbar {
+    background: linear-gradient(90deg, #0d0d0d 60%, #111 100%);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     min-width: 96vw;
     height: 80px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Orbitron', 'Montserrat', Arial, Helvetica, sans-serif;
     padding-top: 20px;
     padding-bottom: 10px;
+    box-shadow: 0 0 20px 2px #0ff2, 0 0 40px 4px #00f2, 0 0 60px 8px #0ff2;
 }
 
 .navbar-left h2 {
@@ -15,46 +19,72 @@
     margin-left: 30px;
     margin-top: 20px;
     cursor: pointer;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #00f0ff, 0 0 20px #7f00ff;
+    transition: transform 0.2s, text-shadow 0.3s;
 }
-.scroll{
+
+.navbar-left h2:hover {
+    transform: scale(1.08);
+    text-shadow: 0 0 20px #00f0ff, 0 0 40px #7f00ff, 0 0 60px #00ffae;
+}
+
+.scroll {
     cursor: pointer;
 }
 
 .navbar-right a {
-    color: #fff;
+    color: #00f0ff;
     text-decoration: none;
     margin: 20px 15px;
-    transition: text-shadow 0.3s ease-in-out;
     font-size: 23px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, box-shadow 0.3s, border-bottom 0.3s, transform 0.2s;
+    box-shadow: 0 0 8px #00f0ff44;
+    position: relative;
 }
-.navbar-right{
+
+.navbar-right a:hover {
+    color: #7f00ff;
+    border-bottom: 2px solid #00ffae;
+    box-shadow: 0 0 16px #00f0ff, 0 0 32px #7f00ff;
+    transform: scale(1.08);
+}
+
+.navbar-right {
     margin-top: 25px;
     margin-right: 60px;
+    display: flex;
+    align-items: center;
 }
-.navbar-right a:hover {
-    text-shadow: 0 0 10px #ff8ec1, 0 0 20px #ff8ec1, 0 0 30px #ff8ec1;
-}
-.navbar-left h2:hover {
-    text-shadow: 0 0 10px #ff8ec1, 0 0 20px #ff8ec1, 0 0 30px #ff8ec1;
-}
+
 .menu-close-icon, .menu-icon {
-    width: 30px;
+    width: 36px;
     display: none;
+    filter: drop-shadow(0 0 8px #00f0ff) drop-shadow(0 0 16px #7f00ff);
+    transition: transform 0.2s;
+}
+
+.menu-icon:hover, .menu-close-icon:hover {
+    transform: scale(1.15);
 }
 
 html {
     scroll-behavior: smooth;
+    background: #0d0d0d;
 }
 
 html, body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
     .navbar {
         margin: 0;
         padding: 0 20px;
-        width: 80vw;
+        width: 100vw;
+        box-shadow: none;
     }
     .menu-icon {
         display: block;
@@ -75,26 +105,33 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        top: -20px;
-        right: -350px; /* Adjusted for smooth transition */
-        background-color: #1F0016;
-        width: 300px;
-        height: 100%;
+        top: 0;
+        right: -100vw;
+        background: linear-gradient(135deg, #111 60%, #0d0d0d 100%);
+        width: 100vw;
+        height: 100vh;
         z-index: 10;
-        transition: right 0.3s ease-in-out; /* Smooth transition */
+        transition: right 0.3s ease-in-out;
         padding-top: 60px;
+        box-shadow: 0 0 40px #00f0ff, 0 0 80px #7f00ff;
     }
     .navbar-right a {
-        font-size: 20px;
-        padding: 10px 20px;
+        font-size: 24px;
+        padding: 18px 32px;
         width: 100%;
         text-align: left;
+        color: #00ffae;
+        border-bottom: 2px solid transparent;
+        box-shadow: none;
     }
     .navbar-right a:hover {
-        background-color: #ff8ec1;
-        color: #000;
+        background: linear-gradient(90deg, #00f0ff22 0%, #7f00ff22 100%);
+        color: #7f00ff;
+        border-bottom: 2px solid #00ffae;
+        box-shadow: 0 0 24px #00f0ff, 0 0 48px #7f00ff;
+        transform: scale(1.08);
     }
-    #home{
+    #home {
         font-size: 30px;
     }
 }

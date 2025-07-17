@@ -23,7 +23,7 @@ function Home() {
           <img className="top-profile" src={upworkPfpCropped2} alt="profile picture" />
         </div>
         <div className="hero-right">
-          <h1>Hey, I'm Kirubel Addis</h1>
+          <h1> I'm Kirubel Addis</h1>
           <h2>Fullstack web developer</h2>
           <a href="#contact">
             <button>Contact me</button>
