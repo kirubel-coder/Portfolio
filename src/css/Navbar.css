@@ -51,12 +51,15 @@
     box-shadow: 0 0 16px #00f0ff, 0 0 32px #7f00ff;
     transform: scale(1.08);
 }
-
-.navbar-right {
+.navbar-right{
     margin-top: 25px;
     margin-right: 60px;
-    display: flex;
-    align-items: center;
+}
+.navbar-right a:hover {
+    text-shadow: 0 0 10px #ff8ec1, 0 0 20px #ff8ec1, 0 0 30px #ff8ec1;
+}
+.navbar-left h2:hover {
+    text-shadow: 0 0 10px #ff8ec1, 0 0 20px #ff8ec1, 0 0 30px #ff8ec1;
 }
 
 .menu-close-icon, .menu-icon {
@@ -72,34 +75,30 @@
 
 html {
     scroll-behavior: smooth;
-    background: #0d0d0d;
 }
 
 html, body {
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 @media (max-width: 768px) {
     .navbar {
         margin: 0;
         padding: 0 20px;
-        width: 100vw;
-        box-shadow: none;
+        width: 80vw;
     }
     .menu-icon {
-        display: block !important;
+        display: block;
         position: fixed;
         top: 20px;
         right: 20px;
-        z-index: 100;
         cursor: pointer;
     }
     .menu-close-icon {
-        display: block !important;
+        display: block;
         position: absolute;
         top: 20px;
         right: 20px;
-        z-index: 101;
         cursor: pointer;
     }
     .navbar-right {
@@ -107,36 +106,26 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        top: 0;
-        right: -100vw; /* Fully off-screen when closed */
-        background: linear-gradient(135deg, #111 60%, #0d0d0d 100%);
-        width: 100vw;
-        height: 100vh;
-        z-index: 99;
-        transition: right 0.3s cubic-bezier(0.77,0,0.175,1);
+        top: -20px;
+        right: -350px; /* Adjusted for smooth transition */
+        background-color: #1F0016;
+        width: 300px;
+        height: 100%;
+        z-index: 10;
+        transition: right 0.3s ease-in-out; /* Smooth transition */
         padding-top: 60px;
-        box-shadow: 0 0 40px #00f0ff, 0 0 80px #7f00ff;
-    }
-    .navbar-right.open {
-        right: 0 !important; /* Fully visible when open */
     }
     .navbar-right a {
-        font-size: 24px;
-        padding: 18px 32px;
+        font-size: 20px;
+        padding: 10px 20px;
         width: 100%;
         text-align: left;
-        color: #00ffae;
-        border-bottom: 2px solid transparent;
-        box-shadow: none;
     }
     .navbar-right a:hover {
-        background: linear-gradient(90deg, #00f0ff22 0%, #7f00ff22 100%);
-        color: #7f00ff;
-        border-bottom: 2px solid #00ffae;
-        box-shadow: 0 0 24px #00f0ff, 0 0 48px #7f00ff;
-        transform: scale(1.08);
+        background-color: #ff8ec1;
+        color: #000;
     }
-    #home {
+    #home{
         font-size: 30px;
     }
 }
