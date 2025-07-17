@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link, useLocation } from 'react-router-dom';
 import '../css/Navbar.css';
@@ -8,13 +8,14 @@ import newCloseMenu_icon from '../assets/newCloseMenu_icon.png';
 function Navbar() {
   const menuRef = useRef();
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const openMenu = () => {
-    menuRef.current.style.right = '-60px';
+    setMenuOpen(true);
   };
 
   const closeMenu = () => {
-    menuRef.current.style.right = '-350px';
+    setMenuOpen(false);
   };
 
   const isProjectPage = location.pathname.startsWith('/project');
@@ -30,14 +31,16 @@ function Navbar() {
           onClick={openMenu}
           src={newMenu_icon}
           alt="Open Menu"
+          style={{ display: menuOpen ? 'none' : 'block' }}
         />
       </div>
-      <div ref={menuRef} className="navbar-right">
+      <div ref={menuRef} className={`navbar-right${menuOpen ? ' open' : ''}`}>
         <img
           className="menu-close-icon"
           onClick={closeMenu}
           src={newCloseMenu_icon}
           alt="Close Menu"
+          style={{ display: menuOpen ? 'block' : 'none' }}
         />
         {!isProjectPage && (
           <>
